@@ -20,8 +20,8 @@ class Artist
   
   def add_song_by_name(song)
   new_song = Song.new(song)   #creates new song with (song) calling the Song class
-  @@songs << new_song
-  new_song.artist = self        
+  @@songs << new_song         #push it into the array
+  new_song.artist = self        #associate the new song with the artist (attr acces or Song)
   @@counter += 1                #add 1 to counter every time new_song is added to songs array
   end
   
